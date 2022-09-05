@@ -1,0 +1,706 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrar/static/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Intern';
+  src: url(../fonts//Intern/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 120px 0 120px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  max-width: 1440px;
+  height: 120px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+.header .menu {
+  width: 25%;
+}
+
+.header .menu__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header .menu__link {
+  list-style-type: none;
+  color: #192252;
+  font-family: "Intern";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+}
+
+.header .menu__link_active {
+  font-weight: 700;
+}
+
+.header .menu__link:hover {
+  cursor: pointer;
+}
+
+.header .button {
+  padding: 14px 16px;
+}
+
+.logo {
+  font-family: "Montserrat";
+  color: #192252;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.button {
+  background: #0e1734;
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: "Intern";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 16px 32px;
+}
+
+.main__reservation {
+  padding: 80px 0 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+}
+
+.main__reservation .description__title {
+  margin: 135px 0 24px 0;
+  font-size: 48px;
+}
+
+.main__reservation .description .text {
+  max-width: 485px;
+  margin-bottom: 32px;
+}
+
+.title {
+  font-family: "Montserrat";
+  color: #192252;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+}
+
+.text {
+  color: #848fac;
+  font-family: "Intern";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  height: 81px;
+}
+
+.image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 20px;
+}
+
+.image__house {
+  height: 588px;
+  border-radius: 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.image__house:nth-child(even) {
+  margin: 0px 24px 0 24px;
+  -webkit-animation: 2s linear 1 forwards fadeUp;
+          animation: 2s linear 1 forwards fadeUp;
+}
+
+@-webkit-keyframes fadeUp {
+  100% {
+    -webkit-transform: translateY(81px);
+            transform: translateY(81px);
+  }
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  100% {
+    -webkit-transform: translateY(81px);
+            transform: translateY(81px);
+  }
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.about-us {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.about-us__location {
+  padding: 175px 0 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-us__location .about-us__image {
+  width: 510px;
+}
+
+.about-us__image {
+  border-radius: 4px;
+  margin-right: 126px;
+}
+
+.about-us__image img {
+  -webkit-transition: 1s;
+  transition: 1s;
+  /* Время эффекта */
+}
+
+.about-us .description__title {
+  margin: 0px 0px 24px 0px;
+}
+
+.about-us .description .text {
+  width: 584px;
+  margin-bottom: 11px;
+}
+
+.about-us__entertainment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 80px 0px 32px 0px;
+}
+
+.about-us__entertainment .about-us__image {
+  margin-left: 126px;
+}
+
+.about-us__food {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-us__image img:hover {
+  -webkit-box-shadow: -2px 6px 22px 11px #9b9b9b;
+          box-shadow: -2px 6px 22px 11px #9b9b9b;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.room-types {
+  text-align: center;
+  padding: 140px 0 80px 0;
+}
+
+.room-types .description__title {
+  margin-bottom: 26px;
+}
+
+.room-types .description .text {
+  margin: 0 auto;
+  max-width: 588px;
+}
+
+.room-types .description .button {
+  margin: 0px 0 88px 0;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: start;
+}
+
+.cards__room .im {
+  width: 100%;
+}
+
+.cards__room .link {
+  color: #424f7b;
+  font-family: "Intern";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  max-width: 97px;
+  height: 27px;
+  text-decoration: none;
+  position: relative;
+}
+
+.cards__room .link::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 110px;
+  width: 20px;
+  height: 20px;
+  background-image: url(/img/Arrow_Right.png);
+}
+
+.cards__room .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.cards__room .modal__content {
+  color: #424f7b;
+  font-family: "Intern";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  background-color: white;
+  margin: 2% auto;
+  padding: 20px;
+  border: 1px solid #ff620a;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cards__room .modal__content .d {
+  width: 280px;
+}
+
+.cards__room .modal__content .title {
+  margin: 10px;
+  text-align: center;
+}
+
+.cards__room .modal__content .close-modal {
+  font-size: 30px;
+  font-weight: bold;
+  float: right;
+  cursor: pointer;
+}
+
+.cards__title {
+  height: 36px;
+  margin: 32px 0 16px 0;
+  font-size: 24px;
+  color: #192252;
+}
+
+.cards .text {
+  max-width: 384px;
+  margin-bottom: 32px;
+}
+
+.cards__room:nth-child(even) {
+  margin: 0px 24px 0px 24px;
+}
+
+.information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 596px;
+}
+
+.information__contact .description__title {
+  margin-top: 0;
+}
+
+.information__contact .description .text {
+  margin: 12px 0 32px 0;
+}
+
+.information__contact .text {
+  max-width: 384px;
+}
+
+.information__contact .btn-contact .button {
+  margin: 0 24px 0 0;
+}
+
+.information__contact .btn-contact__link {
+  display: inline;
+  color: #0e1734;
+  font-family: "Intern";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+}
+
+.information__room {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+  max-width: 588px;
+  height: 436px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.information__room .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+  font-family: "Montserrat";
+  color: #424f7b;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  height: 100px;
+}
+
+.information__room .block__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ffece2;
+  border-radius: 50%;
+}
+
+.information__room .block:nth-child(even) {
+  height: 188px;
+  margin: 24px 0;
+  display: block;
+}
+
+.information__room .block:nth-child(even) .block__link {
+  float: right;
+  background-color: #ff620a;
+}
+
+.information__room .block:nth-child(even) .text {
+  margin-top: 24px;
+}
+
+.answer {
+  color: #424f7b;
+  font-family: "Intern";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  max-width: 143px;
+  margin-bottom: 12px;
+}
+
+.block {
+  height: 100px;
+  padding: 32px 36px 32px 36px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.response {
+  text-align: center;
+  padding: 80px 0 0px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.response .btn-prev,
+.response .btn-next {
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 70px;
+  width: 70px;
+  background-color: rgba(250, 176, 71, 0.35);
+  background-image: url(/img/ArrowDow3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 30px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.response .btn-prev:hover,
+.response .btn-next:hover {
+  background-color: #fab047;
+}
+
+.response .btn-next {
+  left: auto;
+  right: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.response .btn-prev {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.response .slider-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.response .slider-wrapper .slide {
+  display: none;
+}
+
+.response .slider-wrapper .slide.active {
+  display: block;
+}
+
+.response__title {
+  text-align: center;
+}
+
+.response__customer-photo {
+  margin: 50px 0 40px 0;
+  width: 120px;
+  height: 120px;
+}
+
+.response .text {
+  margin: 0 auto;
+  max-width: 793px;
+}
+
+.response__name {
+  margin: 40px 0px 24px 0px;
+  color: #192252;
+  font-family: "Intern";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.dots-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  max-width: 72px;
+  margin-bottom: 80px;
+}
+
+.dots-wrapper .dot {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(250, 176, 71, 0.35);
+  border-radius: 50%;
+}
+
+.dots-wrapper .active {
+  width: 12px;
+  height: 12px;
+  background-color: #fab047;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #d9dbde;
+  font-family: "Intern";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  max-width: 1440px;
+  height: 444px;
+  margin: 0 auto;
+  background-color: #0b265a;
+  color: white;
+  padding: 120px 184px 120px 120px;
+}
+
+.footer .logo {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.footer__text {
+  max-width: 186px;
+  height: 84px;
+  margin: 13px 400px 36px 0;
+}
+
+.footer .icons .icon:not(:last-child) {
+  margin-right: 24px;
+}
+
+.footer .icons .icon img {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.footer .icons .icon img:hover {
+  opacity: 0.7;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.footer__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__info {
+  color: #d9dbde;
+  font-family: "Intern";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.footer__info .footer__list {
+  color: #ffffff;
+  font-family: "Intern";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+}
+
+.footer__info p:not(:last-child) {
+  margin: 24px 0 24px 0;
+}
+
+.footer__info:nth-child(2) {
+  margin: 0 141px 0 100px;
+}
+/*# sourceMappingURL=main.css.map */

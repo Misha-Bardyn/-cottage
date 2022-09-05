@@ -1,0 +1,508 @@
+@import "./_fonts.scss";
+@mixin fontIntern($color, $weight, $size, $height) {
+    color: $color;
+    font-family: "Intern";
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+}
+@mixin fontMontserrat($color, $weight, $size, $height) {
+    font-family: "Montserrat";
+    color: $color;
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+}
+
+@mixin display($val1, $val2) {
+    display: flex;
+    justify-content: $val1;
+    align-items: $val2;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 120px 0 120px;
+}
+.header {
+    @include display(space-between, center);
+    background-color: white;
+    max-width: 1440px;
+    height: 120px;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    .menu {
+        width: 25%; //231
+        &__items {
+            @include display(space-between, center);
+            flex-wrap: wrap;
+        }
+
+        &__link {
+            list-style-type: none;
+            @include fontIntern(#192252, 500, 16px, 19px);
+            text-decoration: none;
+        
+            &_active {
+                font-weight: 700;
+            }
+        }
+        &__link:hover{
+            cursor: pointer;
+        }
+    }
+    .button {
+        padding: 14px 16px;
+    }
+}
+
+.logo {
+    @include fontMontserrat(#192252, 600, 32px, 39px);
+}
+.button {
+    background: #0e1734;
+    border-radius: 4px;
+    @include fontIntern(#ffffff, 500, 16px, 19px);
+    padding: 16px 32px;
+}
+// //----------MAIN BIG FOTO----------------------------------------------------------------------------------------------------------------
+.main {
+    &__reservation {
+        padding: 80px 0 80px 0;
+        @include display(center, normal);
+        .description {
+            &__title {
+                margin: 135px 0 24px 0;
+                font-size: 48px;
+            }
+
+            .text {
+                max-width: 485px;
+                margin-bottom: 32px;
+            }
+        }
+    }
+}
+
+.title {
+    @include fontMontserrat(#192252, 600, 36px, 150%);
+    letter-spacing: -0.01em;
+}
+
+.text {
+    @include fontIntern(#848fac, 400, 18px, 150%);
+    height: 81px;
+}
+
+.image {
+    display: flex;
+    margin-left: 20px;
+    &__house {
+        height: 588px;
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        // box-shadow: 0px 22px 19px 6px gainsboro;
+    }
+}
+
+.image__house:nth-child(even) {
+    margin: 0px 24px 0 24px;
+    animation: 2s linear 1 forwards fadeUp;
+}
+
+@keyframes fadeUp {
+    100% {
+        transform: translateY(81px);
+    }
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+// //------ABOUS US----------------------------------------------------------------------------------------------------------------------------------
+.about-us {
+    &__location {
+        padding: 175px 0 80px 0;
+        @include display(center, center);
+        .about-us__image {
+            width: 510px;
+        }
+    }
+
+    &__image {
+        border-radius: 4px;
+        margin-right: 126px;
+        img {
+            transition: 1s; /* Время эффекта */
+        }
+    }
+
+    .description {
+        &__title {
+            margin: 0px 0px 24px 0px;
+        }
+
+        .text {
+            width: 584px;
+            margin-bottom: 11px;
+        }
+    }
+
+    &__entertainment {
+        @include display(space-between, center);
+        padding: 80px 0px 32px 0px;
+        .about-us__image {
+            margin-left: 126px; /////////////////////////////////////////////////////
+        }
+    }
+
+    &__food {
+        @include display(normal, center);
+    }
+    transition: all 2s;
+}
+.about-us__image {
+    img:hover {
+        box-shadow: -2px 6px 22px 11px rgb(155, 155, 155);
+        transform: scale(1.05);
+       
+
+    }
+}
+// //-----ROOM-----------------------------------------------------------------------------------------------------
+.room-types {
+    text-align: center;
+    padding: 140px 0 80px 0;
+    .description {
+        &__title {
+            margin-bottom: 26px;
+        }
+
+        .text {
+            margin: 0 auto;
+            max-width: 588px;
+        }
+
+        .button {
+            margin: 0px 0 88px 0;
+        }
+    }
+}
+
+.cards {
+    // @include display(space-between, center);
+    display: flex;
+    text-align: start;
+    &__room {
+        .im {
+            width: 100%; //384px
+            /////////////////////////////////////////////////////////////////////
+        }
+        .link {
+            @include fontIntern(#424f7b, 400, 18px, 150%);
+            max-width: 97px;
+            height: 27px;
+            text-decoration: none;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 1px;
+                left: 110px;
+                width: 20px;
+                height: 20px;
+                background-image: url(/img/Arrow_Right.png);
+            }
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background: rgba(0, 0, 0, 0.5);
+
+            &__content { 
+                @include fontIntern(#424f7b, 400, 18px, 150%);
+                background-color: rgb(255, 255, 255);
+                margin: 2% auto;
+                padding: 20px;
+                border: 1px solid #ff620a;
+                width: 80%;
+                display: flex;
+.d{
+    width: 280px;
+}
+.title{
+    margin: 10px ;
+    text-align: center;
+}
+                .close-modal {
+                    font-size: 30px;
+                    font-weight: bold;
+                    float: right;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    &__title {
+        height: 36px;
+        margin: 32px 0 16px 0;
+        font-size: 24px;
+        color: #192252;
+    }
+    .text {
+        max-width: 384px;
+        margin-bottom: 32px;
+    }
+}
+.cards__room:nth-child(even) {
+    margin: 0px 24px 0px 24px;
+}
+// // ------ROOM AND CONTACT----------------------------------------------------------------------------------------------------------
+.information {
+    @include display(space-between, center);
+    height: 596px;
+
+    &__contact {
+        .description {
+            &__title {
+                margin-top: 0;
+            }
+
+            .text {
+                margin: 12px 0 32px 0;
+            }
+        }
+
+        .text {
+            max-width: 384px;
+        }
+
+        .btn-contact {
+            .button {
+                margin: 0 24px 0 0;
+            }
+            &__link {
+                display: inline;
+                @include fontIntern(#0e1734, 500, 16px, 19px);
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__room {
+        @include display(space-between, normal);
+        max-width: 588px;
+        height: 436px;
+        flex-flow: column;
+
+        .block {
+            @include display(space-between, normal);
+            @include fontMontserrat(#424f7b, 600, 24px, 150%);
+            height: 100px;
+
+            &__link {
+                @include display(center, center);
+                width: 40px;
+                height: 40px;
+                background-color: #ffece2;
+                border-radius: 50%;
+            }
+        }
+
+        .block:nth-child(even) {
+            height: 188px;
+            margin: 24px 0;
+            display: block;
+
+            .block__link {
+                float: right;
+                background-color: #ff620a;
+            }
+
+            .text {
+                margin-top: 24px;
+            }
+        }
+    }
+}
+
+.answer {
+    @include fontIntern(#424f7b, 500, 16px, 150%);
+    max-width: 143px;
+    margin-bottom: 12px;
+}
+
+.block {
+    height: 100px;
+    padding: 32px 36px 32px 36px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    // box-shadow: -2px 6px 22px 11px gainsboro;
+}
+// //-------------WOMEN--------------------------------------------------------------------------------------------
+.response {
+    text-align: center;
+    padding: 80px 0 0px 0;
+    display: flex;
+    justify-content: center;
+
+    /////////////////////////////////////////////
+    .btn-prev,
+    .btn-next {
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        height: 70px;
+        width: 70px;
+        background-color: rgba(250, 176, 71, 0.35);
+        background-image: url(/img/ArrowDow3.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30px 30px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .btn-prev:hover,
+    .btn-next:hover {
+        background-color: #fab047;
+    }
+
+    .btn-next {
+        left: auto;
+        right: 0;
+        transform: rotate(90deg);
+    }
+    .btn-prev {
+        transform: rotate(270deg);
+    }
+
+    .slider-wrapper {
+        width: 100%;
+        position: relative;
+        .slide {
+            display: none;
+        }
+        .slide.active {
+            display: block;
+        }
+    }
+
+    ////////////////////////////////////////
+    &__title {
+        text-align: center;
+    }
+
+    &__customer-photo {
+        margin: 50px 0 40px 0;
+        width: 120px;
+        height: 120px;
+    }
+
+    .text {
+        margin: 0 auto;
+        max-width: 793px;
+    }
+
+    &__name {
+        margin: 40px 0px 24px 0px;
+        @include fontIntern(#192252, 500, 20px, 150%);
+    }
+}
+.dots-wrapper {
+    @include display(space-between, center);
+    margin: 0 auto;
+    max-width: 72px;
+    margin-bottom: 80px;
+
+    .dot {
+        width: 8px;
+        height: 8px;
+        background-color: rgba(250, 176, 71, 0.35);
+        border-radius: 50%;
+    }
+
+    .active {
+        width: 12px;
+        height: 12px;
+        background-color: #fab047;
+    }
+}
+//--------------------------------------------------------------------------------------------------------
+.footer {
+    @include display(normal, center);
+    @include fontIntern(#d9dbde, 400, 16px, 28px);
+    max-width: 1440px;
+    height: 444px;
+    margin: 0 auto;
+    background-color: #0b265a;
+    color: white;
+    padding: 120px 184px 120px 120px;
+
+    .logo {
+        color: #ffffff;
+        font-weight: 700;
+    }
+
+    &__text {
+        max-width: 186px;
+        height: 84px;
+        margin: 13px 400px 36px 0;
+    }
+    .icons {
+        .icon:not(:last-child) {
+            margin-right: 24px;
+        }
+
+        .icon {
+            img {
+                transition: 1s;
+            }
+
+            img:hover {
+                opacity: 0.7;
+                transform: scale(1.4);
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+    }
+
+    &__info {
+        @include fontIntern(#d9dbde, 400, 16px, 19px);
+
+        .footer__list {
+            @include fontIntern(#ffffff, 700, 16px, 19px);
+            letter-spacing: 0.01em;
+        }
+
+        p:not(:last-child) {
+            margin: 24px 0 24px 0;
+        }
+
+        &:nth-child(2) {
+            margin: 0 141px 0 100px;
+        }
+    }
+}

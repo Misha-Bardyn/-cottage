@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- -------HEADER---------------------------------------------------------------------------------------------------- -->
+        <header class="header">
+            <h1 class="logo">Cootels</h1>
+            <nav class="menu ">
+                <ul class="menu__items">
+                    <li class="menu__link menu__link_active" onclick="downOne()">Rooms</li>
+                    <li class="menu__link" onclick="downTwo()">Reservation</li>
+                    <li class="menu__link" onclick="downThre()">Contacts</li>
+                </ul>
+            </nav>
+            <!-- <div class="header__button"> -->
+            <button class="button">Get Started</button>
+            <!-- </div> -->
+        </header>
+        <!-- -------MAIN---------------------------------------------------------------------------------------------------- -->
+        <main class="main">
+            <div class="main__reservation">
+                <div class="description">
+                    <h2 class="title description__title"> Nature, Warmth, and Beauty in One Space</h2>
+                    <p class="text">
+                        One place to release all the stress, bring back happines, and get back to nature. We provide the
+                        best room and nature for you. Come visit us anytime you want.
+                    </p>
+                    <button class="button">Reservation</button>
+                </div>
+                <div class="image">
+                    <img class="image__house" src="./img/imge_one.png" alt="1">
+                    <img class="image__house" src="./img/imge_two.png" alt="2">
+                    <img class="image__house" src="./img/imge_three.png" alt="3">
+                </div>
+            </div>
+            <!-- ----------ABOOUT-US------------------------------------------------------------------------------------------------- -->
+            <div class="about-us">
+                <div class="about-us__location">
+                    <div class="about-us__image">
+                        <img src="./img/image 4.png" alt="4">
+                    </div>
+                    <div class="description">
+                        <h3 class="title description__title">Cozy and Down to Earth Cootage Hotel in Norway</h3>
+                        <p class="text">Our Cootage Hotel is an intimate hideway concieved for dicerning travelers. It
+                            faces
+                            directly the unique and spectacular panorama of the Hallerbos Jungle.</p>
+                        <p class="text">Cootels extends along a private, quiet, and beautiful nature. Stay away from
+                            crowd
+                            and enjoy the cozy and beauty with us.</p>
+                        <button class="button">Learn More</button>
+                    </div>
+                </div>
+                <div class="about-us__entertainment">
+                    <div class="description">
+                        <h3 class="title description__title">Cabin Activities</h3>
+                        <p class="text">Don't worry to get bored easily in our cabin. We have so many cabin activities
+                            for
+                            you to do it alone or with group. Maybe this is the best chance for you to make new friends
+                            or
+                            even a lover.</p>
+                    </div>
+                    <div class="about-us__image">
+                        <img src="./img/image 5.png" alt="5">
+                    </div>
+                </div>
+                <div class="about-us__food">
+                    <div class="about-us__image">
+                        <img src="./img/image 6.png" alt="6">
+                    </div>
+                    <div class="description">
+                        <h3 class="title description__title">100% Organic Food</h3>
+                        <p class="text">We served 100% organic, low process and delicious food. We allow our guest to
+                            have breakfast or dinner request.What ever made your taste buds happy.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- -----------hauses types-------------------------------------------------------------------------------------------------------- -->
+            <div class="room-types">
+                <div class="description">
+                    <h3 class="title description__title">Many Rooms to Choose</h3>
+                    <p class="text">There is a room for every needs. We have room for individuals until family size, we
+                        also
+                        have a cabin for more private experience.</p>
+                    <button class="button">Explore more</button>
+                </div>
+                <div class="cards">
+                    <div class="cards__room">
+                        <img class="im" src="./img/image 7.png" alt="">
+                        <h3 class="title cards__title">Single Room</h3>
+                        <p class="text">Best for a brave lone wolf who need comfort and quiet quality time, but you
+                            still have a chance
+                            to meet others.</p>
+                        <p class="link" data-columns="Single Room">Learn more</p>
+                        <div class="modal">
+                            <div class="modal__content">
+                                <div>
+                                    <div style="display: flex; justify-content: space-around;">
+                                        <img class="d" src="./img/image 7.png" alt="">
+                                        <img class="d" src="./img/4.jpg" alt="">
+                                        <img class="d" src="./img/3.jpg" alt="">
+                                    </div>
+
+                                    <h3 class="title">Single Room</h3>
+                                    <p> This charismatic one bedroom plan has everything you expect
+                                        from
+                                        small single room. For more privacy in the interior, a sleeping area
+                                        visually separated by a useful storage space.Then the main room
+                                        opens to the porch through large windows that provide enough daylight
+                                        in the interior. Our single room provides peace of mind. Enter the room
+                                        where
+                                        surrounded by trees and wildlife you will immediately feel at home.This room
+                                        is
+                                        good equipped with all necessary amenities, wireless Internet access
+                                        (Wi-Fi),
+                                        24-hour hot and cold water, shower, digital safe, alarm clock on request and
+                                        DSTV.
+                                    </p>
+                                </div>
+                                <span class="close-modal">&times;</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cards__room">
+                        <img class="im" src="./img/image 8.png" alt="">
+                        <h3 class="title cards__title">Double Room</h3>
+                        <p class="text">Best for couple, seek happiness in intimacy without worry of being disturbed.
+                            Feel the whole
+                            world just for you two</p>
+                        <p class="link" data-columns="Double Room">Learn more</p>
+                        <div class="modal">
+                            <div class="modal__content">
+                                <div>
+                                    <div style="display: flex; justify-content: space-around;">
+                                        <img class="d" src="./img/image 8.png" alt="">
+                                        <img class="d" src="./img/7.jpg" alt="">
+                                        <img class="d" src="./img/8.jpg" alt="">
+                                    </div>
+                                    <h3 class="title">Double Room</h3>
+                                    <p> Best for couple, seek happiness in intimacy without worry of being disturbed.
+                                        Feel the whole
+                                        world just for you two.
+                                        A spacious bright room designed for two guests. The room is made in the style of
+                                        an alpine chalet, equipped with furniture made of natural wood.
+                                        Main room
+                                        opens to the porch through large windows that provide enough daylight
+                                        in the interior. Our rooms provide peace of mind. Enter the room where
+                                        surrounded by trees and wildlife you will immediately feel at home.This room is
+                                        good equipped with all necessary amenities, wireless Internet access (Wi-Fi),
+                                        24-hour
+                                        hot and cold water, shower, digital safe, alarm clock on request and DSTV.
+                                    </p>
+                                </div>
+                                <span class="close-modal">&times;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards__room">
+                        <img class="im" src="./img/image 9.png" alt="">
+                        <h3 class="title cards__title">Cootage</h3>
+                        <p class="text">Best for family or group. One cootage can fit up to 5 people. Made stronger bond
+                            with your family
+                            or friends</p>
+                        <p href="" class="link" data-columns="Cootage">Learn more</p>
+                        <div class="modal">
+                            <div class="modal__content">
+                                <div>
+                                    <div style="display: flex; justify-content: space-around;">
+                                        <img class="d" src="./img/image 9.png" alt="">
+                                        <img class="d" src="./img/5.jpg" alt="">
+                                        <img class="d" src="./img/6.jpg" alt="">
+                                    </div>
+                                    <h3 class="title">Cootage</h3>
+                                    <p> The houses are equipped with the necessary conditions for a full and healthy
+                                        rest. All the furniture in the cottages is made of wood and handmade.
+                                        The rooms have a separate bathroom, wardrobe, access to the balcony, wi-fi,
+                                        satellite TV, 24/7 hot and cold water. Also at your service: a wood-burning
+                                        sauna with a contrast pool and massage;
+                                        table tennis; billiards; plasma screen dining room with all amenities
+                                        On the territory there are: a children's playground, a parking lot, a swing,
+                                        wooden gazebos (twenty seats each) with a barbecue, a grill and a barbecue.
+                                    </p>
+                                </div>
+                                <span class="close-modal">&times;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ----------ROOM AND CONTACT-------------------------------------------------------------------------------------- -->
+            <div class="information">
+                <div class="information__contact">
+                    <p class="answer">Start your journey!</p>
+                    <div class="description">
+                        <h3 class="title description__title">How to Get My Room?</h3>
+                        <p class="text">You can contact us by phone or email us. Easily tap the contact button below and
+                            it will take you to our contact point</p>
+                        <div class="btn-contact">
+                            <button class="button">Contact us</button>
+                            <p class="btn-contact__link">Explore more room</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="information__room">
+                    <ol>
+                        <li class="block__item block">1. Choose a room and date
+                            <a href="#" class="block__link"><img src="./img/ArrowDown2.png" alt=""></a>
+                        </li>
+                        <li class="block__item block">2. Check for room availability
+                            <a href="#" class="block__link"><img src="./img/ArrowDow3.png" alt=""></a>
+                            <p class="text">Contact us via phone or email, ask for availability of you choice of room.
+                                We might offer you something exciting.</p>
+                        </li>
+                        <li class="block__item block">3. Enjoy your room
+                            <a href="#" class="block__link"><img src="./img/ArrowDown2.png" alt=""></a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!-- ---------------WOMEN----------------------------------------------------------------------------- -->
+            <div class="response">
+                <div class="slider-wrapper">
+                    <h3 class="title response__title">Hear From Our Happy Customers</h3>
+                    <div class="slide active">
+                        <img class="response__customer-photo" src="./img/Ellipse 1.png" alt="">
+                        <p class="text">“Great service, great food, great people. The scenery is also beautiful, you
+                            can do so much activity even with your famility. Worth every penny! you should come and see
+                            for your self. 5 out of 5! the waffle is great!”</p>
+                        <h2 class="response__name">Kirana Dunham</h2>
+                    </div>
+                    <div class="slide">
+                        <img class="response__customer-photo" src="./img/christian-buehner.png" alt="">
+                        <p class="text">“We spent a few nights here between trips. We will be back again and again. They
+                            offer you what you need and season everything with its friendliness, very professional
+                            service, breakfast, transfer from the airport, live piano music, delicious restaurant.”</p>
+                        <h2 class="response__name">Christian Buehner</h2>
+                    </div>
+                    <div class="slide">
+                        <img class="response__customer-photo" src="./img/meritt-thomas.png" alt="">
+                        <p class="text">“At this hotel you are always greeted by friendly staff, ready to fulfill all
+                            your wishes. A
+                            great bed, a great shower and a delicious breakfast await you. The rooms are quiet, what
+                            else do you need? Perfect design, everything pleases the eye. I want to come back here again
+                            and again”</p>
+                        <h2 class="response__name">Meritt Thomas</h2>
+                    </div>
+                    <div class="slide">
+                        <img class="response__customer-photo" src="./img/jonas-kakaroto.png" alt="">
+                        <p class="text">“Only the best impressions from the time spent here. Great place with beautiful
+                            scenery. Room cleaning at a very high level. I would like to mention the work of the staff -
+                            the work of real professionals. I want to come back here again. Thanks for all!”</p>
+                        <h2 class="response__name">Jonas Kakaroto</h2>
+                    </div>
+                    <div class="btn-prev"></div>
+                    <div class="btn-next"></div>
+                </div>
+            </div>
+            <div class="dots-wrapper">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+
+        </main>
+        <!-- ----------FOOTER------------------------------- -->
+    </div>
+    <footer class="footer">
+        <div class="footer__left">
+            <h3 class="logo">Cootels</h3>
+            <p class="footer__text">Your Best Private Hideway From Crowd. Back to Nature.</p>
+            <div class="icons">
+                <a class="icon" target="_blank" href="https://twitter.com/"><img src="./img/Group.png"
+                        alt="twitter"></a>
+                <a class="icon" target="_blank" href="https://www.instagram.com/accounts/login/"><img
+                        src="./img/instagram-logo.png" alt="instagram"></a>
+                <a class="icon" target="_blank" href="https://www.facebook.com/"><img src="./img/facebook.png"
+                        alt="facebook"></a>
+            </div>
+        </div>
+        <div class="footer__right">
+            <div class="footer__info">
+                <h2 class="footer__list">Rooms</h2>
+                <p>Single Room</p>
+                <p>Double Room</p>
+                <p>Cabin</p>
+                <p>Custom Room</p>
+            </div>
+            <div class="footer__info">
+                <h2 class="footer__list">Reservation</h2>
+                <p>See the Steps</p>
+                <p>Best Time</p>
+            </div>
+            <div class="footer__info">
+                <h2 class="footer__list">Contact</h2>
+                <p>Our Number</p>
+                <p>Our Email</p>
+                <p>Our Location</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
